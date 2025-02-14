@@ -5,20 +5,25 @@
 :root {
   --header-height: 3.5rem;
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(93, 54%, 54%);
-  --first-color-alt: hsl(93, 50%, 48%);
-  --first-color-light: hsl(93, 58%, 66%);
-  --title-color: hsl(228, 8%, 98%);
-  --text-color: hsl(228, 8%, 70%);
+  --first-green: hsl(93, 54%, 54%);
+  --second-green: hsl(93, 50%, 48%);
+  --third-green: hsl(93, 44%, 51%);
+
+  --title-color: hsl(37, 43%, 31%);
+  --text-color: hsl(119, 67%, 24%);
+  --sec-text-color: hsl(36, 32%, 53%);
+
   --white-color: hsl(228, 8%, 98%);
   --black-color: hsl(228, 6%, 4%);
-  --body-color: hsl(150, 77%, 5%);
-  --container-color: hsl(228, 6%, 12%);
-  --shadow-img: 0 0 48px hsla(93, 54%, 54%, .4);
+
+  --body-color: hsl(40, 14%, 88%);
+
+  --container-color: hsl(24, 54%, 73%);
+  --shadow-img: 0 0 48px hsla(93, 60%, 46%, 0.518);
+  
   --gradient-card: linear-gradient(180deg,
-                                hsla(93, 8%, 8%),
-                                hsla(93, 40%, 30%));
+                                rgb(186, 232, 163),
+                                rgb(118, 185, 166));
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -43,7 +48,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.25rem;
+    --biggest-font-size: 3.5rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -149,7 +154,7 @@ img {
 }
 
 .nav__logo i {
-  color: var(--first-color);
+  color: var(--first-green);
   font-size: 1.25rem;
   font-weight: initial;
 }
@@ -189,7 +194,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 .nav__close {
@@ -210,7 +215,7 @@ img {
   position: absolute;
   width: 1000%;
   height: 100%;
-  background-color: hsla(228, 24%, 6%, .2);
+  background-color: hsla(22, 64%, 63%, 0.2);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   top: 0;
@@ -220,7 +225,7 @@ img {
 
 /* Active link */
 .active-link {
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 /*=============== HOME ===============*/
@@ -246,7 +251,7 @@ img {
 }
 
 .home__title span {
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 .home__description {
@@ -273,7 +278,7 @@ img {
 }
 
 .button span {
-  background-color: var(--first-color);
+  background-color: var(--first-green);
   padding: .5rem;
   font-size: 1.25rem;
   border-radius: 50%;
@@ -294,7 +299,7 @@ img {
 }
 
 .button__link:hover {
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 /*=============== NEWS ===============*/
@@ -315,7 +320,7 @@ img {
   width: 200px;
   background: var(--gradient-card);
   padding: 9rem .75rem 1.5rem .75rem;
-  border: 2px solid var(--first-color-light);
+  border: 2px solid var(--first-green-light);
   border-radius: 1.5rem;
 }
 
@@ -358,7 +363,7 @@ img {
   position: relative;
   background: var(--gradient-card);
   padding: 5.75rem .75rem 1.25rem .75rem;
-  border: 2px solid var(--first-color-light);
+  border: 2px solid var(--first-green-light);
   border-radius: 1rem;
 }
 
@@ -426,7 +431,7 @@ img {
 
 .care__item i {
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 /*=============== CONTACT ===============*/
@@ -459,7 +464,7 @@ img {
 }
 
 .contact__social a {
-  color: var(--first-color);
+  color: var(--first-green);
   font-size: 1.5rem;
 }
 
@@ -487,7 +492,7 @@ img {
 }
 
 .footer__logo i {
-  color: var(--first-color);
+  color: var(--first-green);
   font-size: 1.5rem;
   font-weight: initial;
 }
@@ -525,7 +530,7 @@ img {
 
 .footer__link:hover, 
 .footer__social-link:hover {
-  color: var(--first-color);
+  color: var(--first-green);
 }
 
 .footer__copy {
