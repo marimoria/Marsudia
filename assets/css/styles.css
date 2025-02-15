@@ -98,6 +98,7 @@ img {
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
+  justify-content: center;
 }
 
 .grid {
@@ -495,6 +496,7 @@ img {
 }
 
 .footer__content {
+  justify-content: center;
   grid-template-columns: repeat(2, max-content);
   gap: 4rem 3rem;
 }
@@ -580,6 +582,7 @@ img {
 @media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
+    justify-content: center;
   }
 
   .home__title {
@@ -646,6 +649,7 @@ img {
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
+    justify-content: center;
   }
 
   .section {
