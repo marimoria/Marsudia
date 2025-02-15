@@ -5,11 +5,11 @@
 :root {
   --header-height: 3.5rem;
   /*========== Colors ==========*/
-  --first-green: hsl(93, 54%, 54%);
+  --first-green: hsl(93, 50%, 38%);
   --second-green: hsl(93, 50%, 48%);
   --third-green: hsl(93, 44%, 51%);
 
-  --title-color: hsl(37, 43%, 31%);
+  --title-color: hsl(32, 51%, 21%);
   --text-color: hsl(119, 67%, 24%);
   --sec-text-color: hsl(36, 32%, 53%);
 
@@ -48,7 +48,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 3.5rem;
+    --biggest-font-size: 3.0rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -247,7 +247,7 @@ img {
 .home__title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .home__title span {
