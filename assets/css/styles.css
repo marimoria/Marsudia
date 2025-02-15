@@ -140,8 +140,7 @@ img {
 
 .nav__logo, 
 .nav__close, 
-.nav__toggle, 
-.nav__actions {
+.nav__toggle {
   display: flex;
   color: var(--title-color);
   cursor: pointer;
@@ -157,12 +156,6 @@ img {
     width: 8%;
     height: auto;
     margin: 0.5rem;
-}
-
-.nav__actions {
-  font-size: 1.25rem;
-  column-gap: .5rem;
-  align-items: center;
 }
 
 /* Navigation for mobile devices */
@@ -674,10 +667,6 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 2.5rem;
-  }
-  .nav__actions {
-    font-size: 1.5rem;
-    column-gap: 1rem;
   }
 
   .home__container {
