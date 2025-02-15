@@ -34,15 +34,15 @@
                   </li>
 
                   <li class="nav__item">
+                     <a href="#alat" class="nav__link">Peralatan</a>
+                  </li>
+
+                  <li class="nav__item">
                      <a href="#tutorial" class="nav__link">Tutorial</a>
                   </li>
 
                   <li class="nav__item">
                      <a href="#coding" class="nav__link">Coding</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact</a>
                   </li>
                </ul>
 
@@ -73,7 +73,7 @@
                      ARDUINO <br>
                   </h1>
 
-                  <p class="home__description">
+                  <p class="description">
                      Mengambil langkah awal untuk mengubah Bumi 
                      menjadi tempat yang lebih bersih, hijau, dan nyaman
                      dengan tempat pemilah sampah berbasis arduino.
@@ -127,8 +127,8 @@
             </div>
          </section>
 
-         <!--==================== TUTORIAL ====================-->
-         <section class="shop section" id="tutorial">
+         <!--==================== ALAT ====================-->
+         <section class="shop section" id="alat">
             <h2 class="section__title">
                THE BEST PLANTS
             </h2>
@@ -191,8 +191,8 @@
             </div>
          </section>
 
-         <!--==================== CODING ====================-->
-         <section class="care section" id="coding">
+         <!--==================== TUTORIAL ====================-->
+         <section class="care section" id="tutorial">
             <h2 class="section__title">
                TAHAP-TAHAP <BR> PEMBUATAN
             </h2>
@@ -274,50 +274,30 @@
             </div>
          </section>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
+         <!--==================== CODING ====================-->
+         <section class="contact section" id="coding">
             <h2 class="section__title">
-               YOU WANT A CACTUS <br> CONTACT US
+               MAU BUAT UNTUK DIRI SENDIRI? <br> <span class="highlighted_text">CODING</span>
             </h2>
 
             <div class="contact__container container grid">
-               <img src="assets/img/contact-cactus.png" alt="image" class="contact__img">
+               <iframe class="code_embed" src="https://app.arduino.cc/sketches/42291155-898d-41e2-b952-2cdfde2894b5?view-mode=embed" style="height:530px;width:600px;margin: 0" frameborder=0></iframe>
 
                <div class="contact__content">
                   <div>
-                     <h3 class="contact__title">Write to us</h3>
+                     <h3 class="contact__title"><i class="ri-cactus-line" style="color: hsl(93, 50%, 38%);"></i sty> PENJELASAN</h3>
+                     <p class="description">
+                        Kode ini digunakan untuk mendeteksi dan memilah sampah secara otomatis menggunakan Arduino.
+                        <span class="highlighted_em">Sensor ultrasonik</span> mendeteksi keberadaan sampah, 
+                        lalu  <span class="highlighted_em">sensor induktif, kapasitif</span> dan <span class="highlighted_em">sensor raindrop</span> menentukan apakah sampah itu logam, 
+                        organik, atau anorganik.  
 
-                     <div class="contact__social">
-                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank">
-                           <i class="ri-whatsapp-fill"></i>
-                        </a>
+                        <br><br>Setelah jenis sampah diketahui, sistem menggerakkan <span class="highlighted_em">motor stepper & servo</span>  
+                        untuk membuang sampah ke tempat yang sesuai. Sampah basah dikategorikan sebagai organik,
+                         sedangkan logam dan bahan nonlogam kering masuk ke kategori anorganik.  
 
-                        <a href="https://m.me/bedimcode" target="_blank">
-                           <i class="ri-messenger-fill"></i>
-                        </a>
-
-                        <a href="mailto:examplemail@correo.com" target="_blank">
-                           <i class="ri-mail-fill"></i>
-                        </a>
-                     </div>
-                  </div>
-
-                  <div>
-                     <h3 class="contact__title">Call us at the numbers</h3>
-
-                     <address class="contact__info">
-                        +00-987-7654-321 <br>
-                        +11-012345
-                     </address>
-                  </div>
-
-                  <div>
-                     <h3 class="contact__title">Find us here</h3>
-
-                     <address class="contact__info">
-                        Lima - Sun City - Peru <br>
-                        Av. Moon #4321
-                     </address>
+                        <br><br>Fungsi <span class="highlighted_em">throwTrash()</span> menggerakkan motor untuk membuang sampah, sedangkan <span class="highlighted_em">laporan()</span> mencetak hasil deteksi ke serial monitor. Dengan ini, tempat sampah bisa memilah sampah secara otomatis.
+                     </p>
                   </div>
                </div>
             </div>

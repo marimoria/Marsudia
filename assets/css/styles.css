@@ -208,7 +208,7 @@ img {
   position: absolute;
   width: 1000%;
   height: 100%;
-  background-color: hsla(22, 64%, 63%, 0.2);
+  background-color: hsla(118, 64%, 63%, 0.2);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   top: 0;
@@ -247,7 +247,11 @@ img {
   color: var(--first-green);
 }
 
-.home__description {
+.highlighted_em {
+    font-weight: 1000;
+  }
+
+.description {
   margin-bottom: 3rem;
 }
 
@@ -433,10 +437,10 @@ img {
   row-gap: 2rem;
 }
 
-.contact__img {
-  width: 270px;
+.code_embed {
   filter: drop-shadow(var(--shadow-img));
   justify-self: center;
+  border-radius: 5%;
 }
 
 .contact__content {
@@ -681,7 +685,7 @@ img {
   .home__data {
     text-align: initial;
   }
-  .home__description {
+  .description {
     margin-bottom: 2rem;
   }
   .home__buttons {
