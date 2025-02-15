@@ -153,10 +153,10 @@ img {
   align-items: center;
 }
 
-.nav__logo i {
-  color: var(--first-green);
-  font-size: 1.25rem;
-  font-weight: initial;
+.nav__logo img {
+    width: 8%;
+    height: auto;
+    margin: 0.5rem;
 }
 
 .nav__actions {
@@ -184,7 +184,7 @@ img {
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  margin: 3rem;
 }
 
 .nav__link {
@@ -250,7 +250,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.home__title span {
+.highlighted_text {
   color: var(--first-green);
 }
 
@@ -292,7 +292,7 @@ img {
 }
 
 .button__link {
-  color: var(--white-color);
+  color: var(--title-color);
   font-weight: var(--font-bold);
   text-decoration: underline;
   transition: color .4s;
@@ -659,7 +659,7 @@ img {
   }
 
   .nav {
-    height: calc(var(--header-height) + 2rem);
+    height: calc(var(--header-height) + 1rem);
   }
   .nav__toggle, 
   .nav__close {
@@ -673,7 +673,7 @@ img {
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 3.5rem;
+    column-gap: 2.5rem;
   }
   .nav__actions {
     font-size: 1.5rem;
@@ -693,7 +693,7 @@ img {
     text-align: initial;
   }
   .home__description {
-    margin-bottom: 4.5rem;
+    margin-bottom: 2rem;
   }
   .home__buttons {
     justify-content: initial;
