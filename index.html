@@ -30,19 +30,19 @@
                   </li>
 
                   <li class="nav__item">
+                    <a href="#coding" class="nav__link">Coding</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#tutorial" class="nav__link">Tutorial</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#alat" class="nav__link">Peralatan</a>
+                 </li>
+
+                  <li class="nav__item">
                      <a href="#details" class="nav__link">Detail</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#alat" class="nav__link">Peralatan</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#tutorial" class="nav__link">Tutorial</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#coding" class="nav__link">Coding</a>
                   </li>
                </ul>
 
@@ -93,40 +93,95 @@
             </div>
          </section>
 
-         <!--==================== DETAILS ====================-->
-         <section class="new section" id="details">
-            <div class="new__container container grid">
-               <div class="new__data">
-                  <h2 class="section__title">
-                    TINGKAT <span class="highlighted_text">AKURASI</span> DAN <span class="highlighted_text">PRESISI</span> YANG TINGGI🌷
-                  </h2>
+         <!--==================== CODING ====================-->
+         <section class="contact section" id="coding">
+            <h2 class="section__title">
+             JALANKAN TEMPAT SAMPAH DENGAN <br> <span class="highlighted_text">ARDUINO CLOUD 🍄</span>
+            </h2>
 
-                  <p class="new__description">
-                     Tingkat akurasi yang tinggi dan presisi yang sempurna memastikan
-                     tempat sampah ini dapat memilah jenis sampah dengan akurat dan konsisten.
-                  </p>
-               </div>
+            <div class="contact__container container grid">
+               <iframe class="code_embed" src="https://app.arduino.cc/sketches/42291155-898d-41e2-b952-2cdfde2894b5?view-mode=embed" style="height:530px;width:600px;margin: 0" frameborder=0></iframe>
 
-               <div class="new__content grid">
-                  <article class="new__card">
-                     <img src="assets/img/90.png" alt="image" class="new__img">
-                     <h2 class="new__title">Akurasi</h2>
-                     <div class="card__description">Akurasi mengukur sejauh mana sistem dapat mengklasifikasikan sampah dengan benar, baik sebagai organik maupun anorganik.</div>
-                  </article>
+               <div class="contact__content">
+                  <div>
+                     <h3 class="contact__title"><i class="ri-cactus-line" style="color: hsl(93, 50%, 38%);"></i sty> PENJELASAN</h3>
+                     <p class="description">
+                        Kode ini digunakan untuk mendeteksi dan memilah sampah secara otomatis menggunakan Arduino.
+                        <span class="highlighted_em">Sensor ultrasonik</span> mendeteksi keberadaan sampah, 
+                        lalu  <span class="highlighted_em">sensor induktif, kapasitif</span> dan <span class="highlighted_em">sensor raindrop</span> menentukan apakah sampah itu logam, 
+                        organik, atau anorganik.  
 
-                  <article class="new__card">
-                     <img src="assets/img/100.png" alt="image" class="new__img">
-                     <h2 class="new__title">Presisi</h2>
-                     <div class="card__description">Presisi menunjukkan seberapa banyak sampah yang diklasifikasikan sebagai organik benar-benar merupakan sampah organik dan bukan anorganik.</div>
-                  </article>
+                        <br><br>Setelah jenis sampah diketahui, sistem menggerakkan <span class="highlighted_em">motor stepper & servo</span>  
+                        untuk membuang sampah ke tempat yang sesuai. Sampah basah dikategorikan sebagai organik,
+                         sedangkan logam dan bahan nonlogam kering masuk ke kategori anorganik.  
 
-                  <article class="new__card">
-                     <img src="assets/img/80.png" alt="image" class="new__img">
-                     <h2 class="new__title">Recall</h2>
-                     <div class="card__description">Recall menunjukkan banyak sampah organik yang terdeteksi sebagai sampah organik.</div>
-                  </article>
+                        <br><br>Fungsi <span class="highlighted_em">throwTrash()</span> menggerakkan motor untuk membuang sampah, sedangkan <span class="highlighted_em">laporan()</span> mencetak hasil deteksi ke serial monitor. Dengan ini, tempat sampah bisa memilah sampah secara otomatis.
+                     </p>
+                  </div>
                </div>
             </div>
+         </section>
+
+         <!--==================== TUTORIAL ====================-->
+         <section class="care section" id="tutorial">
+            <h2 class="section__title">
+               TAHAP-TAHAP <span class="highlighted_text">MENJALANKAN</span> <BR> TEMPAT PEMILAH SAMPAH OTOMATIS 🌱
+            </h2>
+
+            <div class="care__container container grid">
+                <div class="circuit_container">
+                    <img src="assets/img/circuit_image.png" alt="image" class="care__img">
+                </div>
+
+               <ul class="care__list">
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                       Buka sketch code melalui website Arduino Code.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Sesuaikan code dengan rangkaian yang sudah disiapkan. Misalnya mengubah pin sensor.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Sambungkan Arduino UNO R3 board ke laptop atau pc melalui USB cable.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Click tombol ceklis untuk verify code setelah disesuaikan.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Click tombol panah untuk upload code.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Lepaskan ujung USB dari laptop dan sambungkan ke powerbank.
+                     </p>
+                  </li>
+
+                  <li class="care__item">
+                     <i class="ri-checkbox-fill"></i>
+                     <p>
+                        Gunakan tempat sampah sesuai kebutuhan!
+                     </p>
+                  </li>
          </section>
 
          <!--==================== ALAT ====================-->
@@ -228,109 +283,38 @@
             </div>
          </section>
 
-         <!--==================== TUTORIAL ====================-->
-         <section class="care section" id="tutorial">
-            <h2 class="section__title">
-               TAHAP-TAHAP <span class="highlighted_text">PEMBUATAN</span> <BR> TEMPAT PEMILAH SAMPAH OTOMATIS 🌱
-            </h2>
+         <!--==================== DETAILS ====================-->
+         <section class="new section" id="details">
+            <div class="new__container container grid">
+               <div class="new__data">
+                  <h2 class="section__title">
+                    TINGKAT <span class="highlighted_text">AKURASI</span> DAN <span class="highlighted_text">PRESISI</span> YANG TINGGI🌷
+                  </h2>
 
-            <div class="care__container container grid">
-                <div class="circuit_container">
-                    <img src="assets/img/circuit_image.png" alt="image" class="care__img">
-                </div>
+                  <p class="new__description">
+                     Tingkat akurasi yang tinggi dan presisi yang sempurna memastikan
+                     tempat sampah ini dapat memilah jenis sampah dengan akurat dan konsisten.
+                  </p>
+               </div>
 
-               <ul class="care__list">
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                       Siapkan struktur tempat sampah dengan rak kayu dan toples plastik bekas sebagai tempat input sampah.
-                     </p>
-                  </li>
+               <div class="new__content grid">
+                  <article class="new__card">
+                     <img src="assets/img/90.png" alt="image" class="new__img">
+                     <h2 class="new__title">Akurasi</h2>
+                     <div class="card__description">Akurasi mengukur sejauh mana sistem dapat mengklasifikasikan sampah dengan benar, baik sebagai organik maupun anorganik.</div>
+                  </article>
 
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Pasang sensor raindrop di tengah penutup tempat sampah untuk mendeteksi kelembapan sampah.
-                     </p>
-                  </li>
+                  <article class="new__card">
+                     <img src="assets/img/100.png" alt="image" class="new__img">
+                     <h2 class="new__title">Presisi</h2>
+                     <div class="card__description">Presisi menunjukkan seberapa banyak sampah yang diklasifikasikan sebagai organik benar-benar merupakan sampah organik dan bukan anorganik.</div>
+                  </article>
 
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Pasang sensor inductive proximity dan capacitive proximity di sisi toples untuk mendeteksi sampah logam dan nonlogam.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Tempatkan sensor ultrasonik di sekitar input sampah untuk mendeteksi keberadaan sampah.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Pasang DC Servo Motor SG90 di sisi toples dan hubungkan dengan penutup impraboard agar bisa membuka otomatis.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Tempelkan Arduino Uno R3 di bagian dinding dan sambungkan semua sensor serta kabel vcc & gnd melalui breadboard.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Tempatkan motor stepper 28BYJ-48 di bagian bawah dan hubungkan dengan ULN2003 Driver untuk menggerakkan wadah pemilah sampah.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Siapkan wadah utama dari kayu dan plastik mika yang dibagi menjadi dua bagian untuk sampah organik dan anorganik.
-                     </p>
-                  </li>
-
-                  <li class="care__item">
-                     <i class="ri-checkbox-fill"></i>
-                     <p>
-                        Program Arduino dan uji coba sistem dengan memasukkan berbagai jenis sampah untuk memastikan semuanya berfungsi dengan baik.
-                     </p>
-                  </li>
-               </ul>
-            </div>
-         </section>
-
-         <!--==================== CODING ====================-->
-         <section class="contact section" id="coding">
-            <h2 class="section__title">
-              TIDAK PERLU BAYAR, <br> <span class="highlighted_text">INI CODINGNYA 🍄</span>
-            </h2>
-
-            <div class="contact__container container grid">
-               <iframe class="code_embed" src="https://app.arduino.cc/sketches/42291155-898d-41e2-b952-2cdfde2894b5?view-mode=embed" style="height:530px;width:600px;margin: 0" frameborder=0></iframe>
-
-               <div class="contact__content">
-                  <div>
-                     <h3 class="contact__title"><i class="ri-cactus-line" style="color: hsl(93, 50%, 38%);"></i sty> PENJELASAN</h3>
-                     <p class="description">
-                        Kode ini digunakan untuk mendeteksi dan memilah sampah secara otomatis menggunakan Arduino.
-                        <span class="highlighted_em">Sensor ultrasonik</span> mendeteksi keberadaan sampah, 
-                        lalu  <span class="highlighted_em">sensor induktif, kapasitif</span> dan <span class="highlighted_em">sensor raindrop</span> menentukan apakah sampah itu logam, 
-                        organik, atau anorganik.  
-
-                        <br><br>Setelah jenis sampah diketahui, sistem menggerakkan <span class="highlighted_em">motor stepper & servo</span>  
-                        untuk membuang sampah ke tempat yang sesuai. Sampah basah dikategorikan sebagai organik,
-                         sedangkan logam dan bahan nonlogam kering masuk ke kategori anorganik.  
-
-                        <br><br>Fungsi <span class="highlighted_em">throwTrash()</span> menggerakkan motor untuk membuang sampah, sedangkan <span class="highlighted_em">laporan()</span> mencetak hasil deteksi ke serial monitor. Dengan ini, tempat sampah bisa memilah sampah secara otomatis.
-                     </p>
-                  </div>
+                  <article class="new__card">
+                     <img src="assets/img/80.png" alt="image" class="new__img">
+                     <h2 class="new__title">Recall</h2>
+                     <div class="card__description">Recall menunjukkan banyak sampah organik yang terdeteksi sebagai sampah organik.</div>
+                  </article>
                </div>
             </div>
          </section>
