@@ -77,4 +77,4 @@ npm run build
 
 ## ⭐ Acknowledgement
 - This project was made, built, and documented as a part of SMA Marsudirini Bekasi Scientific Research Project.
-- This project was made sincerely with the help of @marimoria & @bladeve.
+- This project was made sincerely with the help of [@marimoria](https://github.com/marimoria) & [@bladeve](https://github.com/bladeve) also known as [@lyneyy](https://github.com/lyneyy).
